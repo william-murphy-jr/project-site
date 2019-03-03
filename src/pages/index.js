@@ -1,9 +1,10 @@
 import React from "react"
-import appCss from "./app.module.css"
+import appCss from "../pages/css/app.module.css"
 import "bootstrap/dist/css/bootstrap.css"
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button } from "react-bootstrap"
 import Main from "./components/Main.jsx";
-// import 
+import Layout from "../pages/components/Layout.jsx";
+
 class App extends React.Component {
   constructor() {
     super()
@@ -11,7 +12,6 @@ class App extends React.Component {
 
   render() {
     return (
-      // <div className={appCss.test}>Hello there Mom Love Ya!
       <div>
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>

@@ -1,0 +1,48 @@
+.test {
+  color: blue;
+}
+
+.portfolioImage {
+  display: block;
+  margin: 2em auto 2rem auto;
+  width: 175px;
+  height: 175px;
+  border-radius: 33%;
+}
+
+.center {
+  text-align: center;
+}
+
+.email {
+  display: block;
+}
+
+.github {
+  display: block;
+}
+
+.linkedin {
+  display: block;
+}
+
+.resume {
+  display: block;
+  font-size: 1.5em;
+}
+
+.resume a {
+  color: black !important;
+}
+
+.resume a:hover {
+  color: rgba(0, 0, 0, 0.5)!important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.displayImage {
+  width: 225px !important;
+}
