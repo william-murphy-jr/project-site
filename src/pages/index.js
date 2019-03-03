@@ -1,7 +1,7 @@
 import React from "react"
 import appCss from "./app.module.css"
-// export default () => <div>Hello Cruel world!</div>
-
+import { Nav } from "react-bootstrap"
+// import 
 class App extends React.Component {
   constructor() {
     super()
@@ -9,14 +9,31 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className={appCss.test}>Hello there Mom Love Ya!</div>
+      // <div className={appCss.test}>Hello there Mom Love Ya!
+      <div>
+        <Nav
+          activeKey="/home"
+          onSelect={selectedKey => alert(`selected ${selectedKey}`)}
+        >
+          <Nav.Item>
+            <Nav.Link href="/home">Active</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="link-1">Link</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="link-2">Link</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="disabled" disabled>
+              Disabled
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>;
+      </div>
+      // </div>
     )
   }
 };
-// const App = () => {
-//   return (
-//     <div className={appCss.test}>Hello Mom</div>
-//   )
-// };
 
 export default App;
