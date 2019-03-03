@@ -2,6 +2,7 @@ import React from "react"
 import appCss from "./app.module.css"
 import "bootstrap/dist/css/bootstrap.css"
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button } from "react-bootstrap"
+import Main from "./components/Main.jsx";
 // import 
 class App extends React.Component {
   constructor() {
@@ -33,8 +34,8 @@ class App extends React.Component {
             </Form>
           </Navbar.Collapse>
         </Navbar>;
+        <Main></Main>
       </div>
-      // </div>
     )
   }
 };
